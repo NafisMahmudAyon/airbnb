@@ -26,7 +26,6 @@ export const TabItem: React.FC<TabItemProps> = ({
 }) => {
   const { activeTab, setActiveTab } = useTabs()
   const isActive = activeTab === id
-  console.log(isActive)
   return (
     <button
       className={cn(
