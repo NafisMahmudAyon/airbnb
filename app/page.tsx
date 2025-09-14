@@ -14,7 +14,7 @@ export default async function Home() {
     "Places to stay in"
   ]
   return (
-    <div className="max-w-[1440px] mx-auto 2xl:px-[48px] mt-[190px]">
+    <div className="max-w-[1440px] mx-auto 2xl:px-[48px] mt-[190px] mb-[49px]">
       {locations.map((location, i) => (
         <div key={i} className="pl-4 md:px-4">
           <h2 className="text-[20px] font-semibold mt-6 md:mt-8 mb-3.5 cursor-pointer inline-block">{prefix[i]} {location} <ArrowRightIcon /></h2>

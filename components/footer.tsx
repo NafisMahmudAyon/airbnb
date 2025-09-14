@@ -89,7 +89,7 @@ const footer = () => {
 
   return (
     <div className='bg-[#F7F7F7] pt-12'>
-      <div className='max-w-[1344px] px-4 pb-12 mx-auto'>
+      <div className='px-4 lg:px-6 pb-12'>
         <h2 className='text-[1.375rem] font-medium mb-4'>Inspiration for future getaways</h2>
         <Tabs defaultActive="tips">
           <TabList className='flex gap-6'>
@@ -115,7 +115,7 @@ const footer = () => {
           </TabContent>
         </Tabs>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-3 px-4'>
+      <div className='grid grid-cols-1 md:grid-cols-3 px-4 lg:px-6'>
         <div className='py-6 border-b border-[#DDDDDD]'>
           <h2 className='text-sm text-text font-medium mb-4'>Support</h2>
           <ul className='grid gap-4 justify-items-start'>
@@ -141,7 +141,7 @@ const footer = () => {
           </ul>
         </div>
       </div>
-      <div className='flex flex-col-reverse lg:flex-row justify-between lg:items-center gap-4 text-sm py-7 px-4'>
+      <div className='flex flex-col-reverse lg:flex-row justify-between lg:items-center gap-4 text-sm py-7 px-4 lg:px-6'>
         <div className='flex flex-col md:flex-row gap-4'>
           <p>© 2025 Airbnb, Inc.</p>
           <div className='flex gap-4'>
