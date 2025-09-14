@@ -141,15 +141,19 @@ const footer = () => {
           </ul>
         </div>
       </div>
-      <div className='flex justify-between items-center text-sm py-7 px-4'>
-        <div className='flex gap-4'>
+      <div className='flex flex-col-reverse lg:flex-row justify-between lg:items-center gap-4 text-sm py-7 px-4'>
+        <div className='flex flex-col md:flex-row gap-4'>
           <p>© 2025 Airbnb, Inc.</p>
-          <Link href="#" className='hover:underline'>Terms</Link><Link href="#" className='hover:underline'>Sitemap</Link><Link href="#" className='hover:underline'>Privacy</Link><Link href="#" className='hover:underline'>Your Privacy Choices</Link>
+          <div className='flex gap-4'>
+            <Link href="#" className='hover:underline'>Terms</Link><Link href="#" className='hover:underline'>Sitemap</Link><Link href="#" className='hover:underline'>Privacy</Link><Link href="#" className='hover:underline'>Your Privacy Choices</Link>
+          </div>
         </div>
-        <div className='text-sm flex gap-4 font-medium'>
-          <span className='inline-flex items-center gap-1'><Globe size={16} />English (US)</span>
-          <span className='inline-flex items-center gap-1'><DollarSign size={16} />
-            USD</span>
+        <div className='text-sm flex flex-col md:flex-row md:justify-between lg:justify-start  gap-4 font-medium'>
+          <div className='flex gap-4'>
+            <span className='inline-flex items-center gap-1'><Globe size={16} />English (US)</span>
+            <span className='inline-flex items-center gap-1'><DollarSign size={16} />
+              USD</span>
+          </div>
           <span className='inline-flex items-center gap-5'>
             <span className='relative before:absolute before:content-[""] before:w-[32px] before:h-[32px] hover:before:bg-[#EBEBEB] before:z-10 before:left-1/2 before:top-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full'>
               <FacebookIcon />
